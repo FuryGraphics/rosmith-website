@@ -1,0 +1,8 @@
+{
+  "name": "R.O. Smith Law Firm",
+  "description": "Premium digital landing page of R.O. Smith Law Firm, offering premier criminal defense, personal injury, and real estate representation in NYC, Nassau, Suffolk, and Westchester.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
