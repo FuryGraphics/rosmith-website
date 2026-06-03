@@ -131,5 +131,41 @@ export const SERVICE_AREAS: ServiceArea[] = [
     name: 'Westchester County',
     coverage: 'Yonkers, New Rochelle, White Plains, Mount Vernon',
     details: 'Serving communities north of New York City. We manage criminal, personal injury, and real estate litigation in local Westchester County courts.'
+  },
+  {
+    id: 'queens',
+    name: 'Queens',
+    coverage: 'Jamaica, Flushing, Astoria, Long Island City, Forest Hills, Far Rockaway',
+    details: 'With our office located right on the Queens–Nassau border in Elmont, we provide rapid, around-the-clock representation throughout Queens. We appear regularly in Queens County Criminal and Supreme Courts and handle injury and real estate matters across the entire borough.'
+  },
+  {
+    id: 'brooklyn',
+    name: 'Brooklyn',
+    coverage: 'Downtown Brooklyn, Park Slope, Bay Ridge, Bushwick, Flatbush, Williamsburg',
+    details: 'We represent clients throughout Kings County, appearing in Brooklyn criminal and civil courts. From accident claims to residential and commercial closings, our team delivers focused, aggressive advocacy across every Brooklyn neighborhood.'
+  },
+  {
+    id: 'bronx',
+    name: 'The Bronx',
+    coverage: 'South Bronx, Riverdale, Fordham, Pelham Bay, Throgs Neck, Morris Park',
+    details: 'Our attorneys handle criminal defense, personal injury, and real estate matters across the Bronx, with frequent appearances in Bronx County courthouses. We remain available 24/7 for arrests and time-sensitive emergencies.'
+  },
+  {
+    id: 'manhattan',
+    name: 'Manhattan',
+    coverage: 'Midtown, Harlem, Lower Manhattan, Upper East Side, Washington Heights, Chelsea',
+    details: 'We represent individuals and businesses throughout New York County. Whether you are facing charges in Manhattan Criminal Court or closing on a co-op or condo, we provide meticulous, high-level representation in the heart of the city.'
+  },
+  {
+    id: 'rockland',
+    name: 'Rockland County',
+    coverage: 'New City, Spring Valley, Nyack, Suffern, Pearl River, Nanuet',
+    details: 'Extending our representation across the Hudson into Rockland County, we assist clients with criminal defense, injury claims, and real estate transactions in local Rockland courts and communities.'
+  },
+  {
+    id: 'orange',
+    name: 'Orange County',
+    coverage: 'Newburgh, Middletown, Goshen, Monroe, Port Jervis, Warwick',
+    details: 'We serve clients throughout Orange County in the lower Hudson Valley, handling criminal, personal injury, and property matters with the same 24/7 availability and personal attention our clients rely on.'
   }
 ];

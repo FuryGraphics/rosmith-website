@@ -5,6 +5,7 @@ import {
   Menu, X, Phone, Calendar, Scale, Clock, ChevronDown,
   Shield, Heart, Building, Building2, MapPin, LucideIcon
 } from 'lucide-react';
+import { SERVICE_AREAS } from '../data';
 
 interface NavbarProps {
   onOpenConsultation: () => void;
@@ -23,12 +24,13 @@ const LAW_SPECIALTIES: DropdownItem[] = [
   { label: 'Real Estate Law', to: '/practice-areas/real-estate', blurb: 'Closings & transactions', Icon: Building }
 ];
 
-const AREAS_SERVED: DropdownItem[] = [
-  { label: 'New York City', to: '/service-areas/nyc', blurb: 'All five boroughs', Icon: Building2 },
-  { label: 'Nassau County', to: '/service-areas/nassau', blurb: 'Elmont, Hempstead, Mineola', Icon: MapPin },
-  { label: 'Suffolk County', to: '/service-areas/suffolk', blurb: 'Islip, Huntington, Babylon', Icon: MapPin },
-  { label: 'Westchester County', to: '/service-areas/westchester', blurb: 'Yonkers, White Plains', Icon: MapPin }
-];
+// Derived from data so new service areas automatically appear in the menu
+const AREAS_SERVED: DropdownItem[] = SERVICE_AREAS.map((a) => ({
+  label: a.name,
+  to: `/service-areas/${a.id}`,
+  blurb: a.coverage.split(',').slice(0, 2).map((s) => s.trim()).join(', '),
+  Icon: a.name.includes('County') ? MapPin : Building2
+}));
 
 const PAGE_LINKS = [
   { label: 'Why Us', to: '/why-us' },
@@ -40,9 +42,10 @@ const LINK_BASE = 'text-[13px] font-semibold uppercase tracking-wide transition-
 
 /* ---------------- Desktop hover dropdown ---------------- */
 function NavDropdown({
-  label, overviewPath, basePath, heading, items
+  label, overviewPath, basePath, heading, items, wide = false, footer
 }: {
-  label: string; overviewPath: string; basePath: string; heading: string; items: DropdownItem[];
+  label: string; overviewPath: string; basePath: string; heading: string;
+  items: DropdownItem[]; wide?: boolean; footer?: { label: string; to: string };
 }) {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -68,33 +71,42 @@ function NavDropdown({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
-            className="absolute left-1/2 top-full -translate-x-1/2 pt-4 w-80 z-50"
+            className={`absolute left-1/2 top-full -translate-x-1/2 pt-4 z-50 ${wide ? 'w-[36rem]' : 'w-80'}`}
           >
             <div className="absolute left-1/2 top-2.5 h-3 w-3 -translate-x-1/2 rotate-45 bg-navy" />
             <div className="overflow-hidden rounded-xl bg-navy shadow-2xl ring-1 ring-black/5">
               <div className="px-5 py-3 border-b border-white/10">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">{heading}</span>
               </div>
-              <div className="p-2">
+              <div className={`p-2 ${wide ? 'grid grid-cols-2 gap-1' : ''}`}>
                 {items.map((item) => (
                   <Link
                     key={item.to}
                     to={item.to}
                     onClick={() => setOpen(false)}
-                    className="group flex items-center gap-3 rounded-lg px-3 py-3 hover:bg-white/5 transition-colors"
+                    className="group flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-white/5 transition-colors min-w-0"
                   >
-                    <span className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 text-gold group-hover:bg-gold group-hover:text-navy transition-colors shrink-0">
-                      <item.Icon size={18} />
+                    <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white/5 text-gold group-hover:bg-gold group-hover:text-navy transition-colors shrink-0">
+                      <item.Icon size={17} />
                     </span>
-                    <span className="flex flex-col">
-                      <span className="font-display text-sm font-bold uppercase tracking-wide text-white group-hover:text-gold transition-colors">
+                    <span className="flex flex-col min-w-0">
+                      <span className="font-display text-sm font-bold uppercase tracking-wide text-white group-hover:text-gold transition-colors truncate">
                         {item.label}
                       </span>
-                      <span className="text-[11px] text-blue-100/60">{item.blurb}</span>
+                      <span className="text-[11px] text-blue-100/60 truncate">{item.blurb}</span>
                     </span>
                   </Link>
                 ))}
               </div>
+              {footer && (
+                <Link
+                  to={footer.to}
+                  onClick={() => setOpen(false)}
+                  className="block border-t border-white/10 px-5 py-3 text-center text-[11px] font-bold uppercase tracking-widest text-gold hover:bg-white/5 transition-colors"
+                >
+                  {footer.label} →
+                </Link>
+              )}
             </div>
           </motion.div>
         )}
@@ -225,6 +237,8 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                 basePath="/service-areas"
                 heading="Where We Practice"
                 items={AREAS_SERVED}
+                wide
+                footer={{ label: 'View All Areas Served', to: '/service-areas' }}
               />
 
               {PAGE_LINKS.map((link) => (
