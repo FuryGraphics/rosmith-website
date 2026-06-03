@@ -1,41 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;650;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opt@1,8..60&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
-  
-  /* Additional customized palette nuances if required */
-  --color-gold-warm: #C9A84C;
-  --color-gold-light: #E8D5B7;
-  --color-charcoal-deep: #0a0a0a;
-  --color-charcoal-medium: #111111;
-  --color-navy-charcoal: #1a1a2e;
+  --font-serif: "Oswald", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-quote: "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
+
+  /* Brand palette — professional navy + gold */
+  --color-navy: #0e2a4e;
+  --color-navy-deep: #07182f;
+  --color-navy-medium: #143a66;
+  --color-navy-light: #1d4d85;
+  --color-gold: #c9a14a;
+  --color-gold-bright: #e2bf6c;
+  --color-gold-soft: #f2e6c8;
+  --color-cream: #f6f7f9;
+  --color-ink: #16243a;
+  --color-slate: #5a6678;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-charcoal-deep);
-  color: #f5f5f5;
+  background-color: #ffffff;
+  color: var(--color-ink);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom scroll bar styling matching theme */
+/* Display headings get the condensed, authoritative law-firm voice */
+.font-serif,
+.font-display {
+  letter-spacing: 0.01em;
+}
+
+/* Custom scroll bar styling matching the light theme */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-charcoal-deep);
+  background: #e9ecf1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a3e;
+  background: #c2c9d4;
   border-radius: 4px;
-  border: 2px solid var(--color-charcoal-deep);
+  border: 2px solid #e9ecf1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-warm);
+  background: var(--color-gold);
 }
