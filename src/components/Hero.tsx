@@ -31,7 +31,8 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
       <div className="absolute top-1/2 right-10 z-0 h-[500px] w-[500px] rounded-full bg-neutral-900/50 blur-[100px]" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl">
+        <div className="flex items-center justify-between gap-8 lg:gap-16">
+        <div className="max-w-3xl flex-1">
           {/* Tagline Indicator */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -123,6 +124,28 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
             <div>
               <span className="block text-xl font-serif font-bold text-[#C9A84C]">Trial Ready</span>
               <span className="text-xs uppercase tracking-widest text-[#b8b8b8] font-mono">Aggressive Advocacy</span>
+            </div>
+          </motion.div>
+        </div>
+
+          {/* Attorney Photo */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            className="hidden lg:flex flex-col items-center flex-shrink-0"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-neutral-950 via-transparent to-transparent z-10" />
+              <img
+                src="/rosmith.png"
+                alt="R.O. Smith, Attorney at Law"
+                className="w-80 xl:w-96 rounded-2xl object-cover object-top shadow-2xl border border-neutral-800"
+                style={{ maxHeight: '520px' }}
+              />
+              <div className="absolute bottom-4 left-0 right-0 z-20 text-center">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#C9A84C] font-mono">R.O. Smith, Esq.</span>
+              </div>
             </div>
           </motion.div>
         </div>
