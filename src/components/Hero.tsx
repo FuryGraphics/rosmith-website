@@ -139,8 +139,8 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
               <div className="absolute -inset-3 rounded-2xl border border-gold/30" />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-navy-deep via-transparent to-transparent z-10" />
               <img
-                src="/rosmith.png"
-                alt="R.O. Smith, Attorney at Law"
+                src="/randy.png"
+                alt="Randy O. Smith, Attorney at Law"
                 className="w-80 xl:w-96 rounded-2xl object-cover object-top shadow-2xl"
                 style={{ maxHeight: '540px' }}
               />
