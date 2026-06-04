@@ -13,6 +13,8 @@ import TestimonialsPage from './pages/TestimonialsPage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
 import ServiceAreaPage from './pages/ServiceAreaPage';
 import FAQPage from './pages/FAQPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsPage from './pages/TermsPage';
 
 // Reset scroll to the top whenever the route changes
 function ScrollToTop() {
@@ -52,6 +54,8 @@ function Shell() {
           <Route path="/service-areas" element={<ServiceAreasPage />} />
           <Route path="/service-areas/:areaId" element={<ServiceAreaPage onOpenConsultation={handleOpenConsultation} />} />
           <Route path="/faq" element={<FAQPage onOpenConsultation={handleOpenConsultation} />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
           <Route path="*" element={<HomePage onOpenConsultation={handleOpenConsultation} />} />
         </Routes>
       </main>

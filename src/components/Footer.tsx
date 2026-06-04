@@ -148,10 +148,9 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
               Legal
             </h4>
-            <div className="flex flex-col gap-2.5 text-sm text-blue-100/50">
-              <span className="cursor-not-allowed select-none">Privacy Policy</span>
-              <span className="cursor-not-allowed select-none">Disclaimer</span>
-              <span className="cursor-not-allowed select-none">Sitemap</span>
+            <div className="flex flex-col gap-2.5 text-sm text-blue-100/70">
+              <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="hover:text-gold transition-colors">Terms &amp; Conditions</Link>
             </div>
           </div>
 
