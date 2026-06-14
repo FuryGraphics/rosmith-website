@@ -21,7 +21,7 @@ export default function WhyChoose() {
     {
       icon: <PhoneCall size={20} />,
       title: 'True 24/7/365 Emergency Access',
-      description: 'Arrests or critical incidents do not keep business hours. Our legal line (917-547-7563) is answered around the clock, providing timely guidance.'
+      description: 'Arrests or critical incidents do not keep business hours. Our legal line (917-547-2563) is answered around the clock, providing timely guidance.'
     },
     {
       icon: <HelpCircle size={20} />,

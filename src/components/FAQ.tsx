@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: 'Are you really available 24/7?',
-    a: 'Yes. Arrests and emergencies do not keep business hours. Our legal line, (917) 547-7563, is answered around the clock, every day of the year, so you can reach counsel the moment you need guidance.'
+    a: 'Yes. Arrests and emergencies do not keep business hours. Our legal line, (917) 547-2563, is answered around the clock, every day of the year, so you can reach counsel the moment you need guidance.'
   },
   {
     q: 'Do I pay anything upfront for a personal injury case?',
@@ -108,11 +108,11 @@ export default function FAQ({ onOpenConsultation }: FAQProps) {
               Free Consultation
             </button>
             <a
-              href="tel:9175477563"
+              href="tel:9175472563"
               className="flex items-center justify-center gap-2 rounded-md border-2 border-white/30 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-white hover:text-navy transition-colors"
             >
               <Phone size={15} />
-              <span>(917) 547-7563</span>
+              <span>(917) 547-2563</span>
             </a>
           </div>
         </div>

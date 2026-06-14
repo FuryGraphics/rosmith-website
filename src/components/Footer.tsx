@@ -39,12 +39,12 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
             </button>
 
             <a
-              href="tel:9175477563"
+              href="tel:9175472563"
               className="flex items-center justify-center gap-2 rounded-md border-2 border-navy px-8 py-4 text-sm font-bold uppercase tracking-wide text-navy hover:bg-navy/10 transition-colors w-full sm:w-auto text-center"
               id="footer-action-call"
             >
               <Phone size={15} />
-              <span>Call Randy: (917) 547-7563</span>
+              <span>Call Randy: (917) 547-2563</span>
             </a>
           </div>
         </div>
@@ -85,8 +85,8 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
               </div>
               <div className="flex gap-2.5 items-center">
                 <Phone size={15} className="text-gold shrink-0" />
-                <a href="tel:9175477563" className="hover:text-white transition-colors font-bold">
-                  (917) 547-7563
+                <a href="tel:9175472563" className="hover:text-white transition-colors font-bold">
+                  (917) 547-2563
                 </a>
               </div>
               <div className="flex gap-2.5 items-center">

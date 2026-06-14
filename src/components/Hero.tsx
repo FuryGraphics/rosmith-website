@@ -99,12 +99,12 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
               </motion.button>
 
               <a
-                href="tel:9175477563"
+                href="tel:9175472563"
                 className="flex items-center justify-center gap-2.5 rounded-md border-2 border-white/30 bg-white/5 backdrop-blur-sm px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white hover:text-navy transition-colors"
                 id="hero-phone-btn"
               >
                 <Phone size={17} />
-                <span>(917) 547-7563</span>
+                <span>(917) 547-2563</span>
               </a>
             </motion.div>
 

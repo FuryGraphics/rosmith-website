@@ -10,7 +10,7 @@ export default function FloatingCall() {
       className="fixed bottom-6 right-6 z-40 md:hidden"
     >
       <a
-        href="tel:9175477563"
+        href="tel:9175472563"
         className="flex h-14 w-14 items-center justify-center rounded-full bg-[#C9A84C] text-neutral-950 shadow-2xl hover:bg-[#d4b896] hover:scale-105 active:scale-95 transition-all text-center relative border border-white/10"
         aria-label="Direct Mobile Call Attorney"
         id="mobile-floating-dialer"

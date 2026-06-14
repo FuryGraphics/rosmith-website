@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
               <div className="mt-3 space-y-1">
                 <p><strong>R.O. Smith Law Firm</strong></p>
                 <p>11418 238th Street, Elmont, NY 11003</p>
-                <p>Phone: <a href="tel:9175477563" className="text-gold font-semibold hover:underline">(917) 547-7563</a></p>
+                <p>Phone: <a href="tel:9175472563" className="text-gold font-semibold hover:underline">(917) 547-2563</a></p>
                 <p>Email: <a href="mailto:rsmit042179@gmail.com" className="text-gold font-semibold hover:underline">rsmit042179@gmail.com</a></p>
               </div>
             </div>

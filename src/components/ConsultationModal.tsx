@@ -107,12 +107,12 @@ export default function ConsultationModal({ isOpen, onClose, initialPracticeArea
                 </a>
 
                 <a
-                  href="tel:9175477563"
+                  href="tel:9175472563"
                   className="flex w-full items-center justify-center gap-2 rounded-md border-2 border-navy px-6 py-3 text-sm font-bold uppercase tracking-wide text-navy hover:bg-navy hover:text-white transition-colors"
                   id="call-us-btn"
                 >
                   <Phone size={16} />
-                  <span>Call (917) 547-7563</span>
+                  <span>Call (917) 547-2563</span>
                 </a>
               </div>
 

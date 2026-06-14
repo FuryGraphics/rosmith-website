@@ -61,8 +61,8 @@ export default function MapSection() {
                 </div>
                 <div>
                   <span className="block text-[10px] text-slate uppercase tracking-widest font-bold">Legal Team Phone</span>
-                  <a href="tel:9175477563" className="text-sm font-bold text-navy hover:text-gold transition-colors">
-                    (917) 547-7563
+                  <a href="tel:9175472563" className="text-sm font-bold text-navy hover:text-gold transition-colors">
+                    (917) 547-2563
                   </a>
                 </div>
               </div>

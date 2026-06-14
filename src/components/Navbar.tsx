@@ -181,9 +181,9 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             </div>
             <div className="flex items-center gap-5">
               <span className="text-white/70">Elmont, NY • Serving All NYC & Long Island</span>
-              <a href="tel:9175477563" className="flex items-center gap-1.5 font-bold text-gold hover:text-gold-bright transition-colors">
+              <a href="tel:9175472563" className="flex items-center gap-1.5 font-bold text-gold hover:text-gold-bright transition-colors">
                 <Phone size={12} />
-                <span>(917) 547-7563</span>
+                <span>(917) 547-2563</span>
               </a>
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             {/* Mobile Hamburg Toggle */}
             <div className="flex items-center gap-3 lg:hidden">
               <a
-                href="tel:9175477563"
+                href="tel:9175472563"
                 className="flex h-10 w-10 items-center justify-center rounded-md bg-navy text-gold"
                 aria-label="Direct Phone Call"
                 id="mobile-nav-phone-direct"
@@ -345,9 +345,9 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
               <div className="mt-8 space-y-4">
                 <div className="flex flex-col gap-1">
                   <span className="text-[10px] uppercase font-bold text-slate tracking-widest">Available 24/7/365</span>
-                  <a href="tel:9175477563" className="flex items-center gap-2 text-xl font-bold text-navy" id="mobile-drawer-call-btn">
+                  <a href="tel:9175472563" className="flex items-center gap-2 text-xl font-bold text-navy" id="mobile-drawer-call-btn">
                     <Phone size={18} className="text-gold" />
-                    <span>(917) 547-7563</span>
+                    <span>(917) 547-2563</span>
                   </a>
                 </div>
                 <button

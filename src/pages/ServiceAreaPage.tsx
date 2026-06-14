@@ -84,11 +84,11 @@ export default function ServiceAreaPage({ onOpenConsultation }: ServiceAreaPageP
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </button>
               <a
-                href="tel:9175477563"
+                href="tel:9175472563"
                 className="flex items-center justify-center gap-2.5 rounded-md border-2 border-white/30 bg-white/5 px-7 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-white hover:text-navy transition-colors"
               >
                 <Phone size={16} />
-                <span>(917) 547-7563</span>
+                <span>(917) 547-2563</span>
               </a>
             </div>
           </motion.div>
@@ -166,10 +166,10 @@ export default function ServiceAreaPage({ onOpenConsultation }: ServiceAreaPageP
                     Schedule Now
                   </button>
                   <a
-                    href="tel:9175477563"
+                    href="tel:9175472563"
                     className="mt-3 flex w-full items-center justify-center gap-2 rounded-md border-2 border-white/20 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white hover:text-navy transition-colors"
                   >
-                    <Phone size={15} /> (917) 547-7563
+                    <Phone size={15} /> (917) 547-2563
                   </a>
                 </div>
 

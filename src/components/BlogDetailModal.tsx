@@ -131,12 +131,12 @@ export default function BlogDetailModal({ post, onClose, onOpenConsultation }: B
                   <span>Request Free Case Evaluation</span>
                 </button>
                 <a
-                  href="tel:9175477563"
+                  href="tel:9175472563"
                   className="flex items-center justify-center gap-2 rounded-md border border-neutral-800 bg-neutral-950 px-5 py-3 text-xs md:text-sm font-semibold text-neutral-200 hover:bg-neutral-800 transition-colors shrink-0"
                   id="blog-alert-call-btn"
                 >
                   <Phone size={16} className="text-[#C9A84C]" />
-                  <span>Call Randy: (917) 547-7563</span>
+                  <span>Call Randy: (917) 547-2563</span>
                 </a>
               </div>
             </div>

@@ -132,12 +132,12 @@ export default function PracticeAreaDetailModal({ area, onClose, onOpenConsultat
                   <span>Schedule Consultation</span>
                 </button>
                 <a
-                  href="tel:9175477563"
+                  href="tel:9175472563"
                   className="flex flex-1 items-center justify-center gap-2 rounded-md border border-neutral-800 bg-neutral-950 px-6 py-3 font-semibold text-neutral-200 hover:bg-neutral-800 transition-colors"
                   id="practice-cta-phone"
                 >
                   <Phone size={18} className="text-[#C9A84C]" />
-                  <span>Call Randy Now: (917) 547-7563</span>
+                  <span>Call Randy Now: (917) 547-2563</span>
                 </a>
               </div>
             </div>
