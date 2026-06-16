@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Mail, Phone, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { X, Mail, Phone, MapPin } from 'lucide-react';
 import { PRACTICE_AREAS } from '../data';
 
 interface ConsultationModalProps {
@@ -53,7 +53,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPracticeArea
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: 'spring', duration: 0.5 }}
-            className="relative w-full max-w-md overflow-hidden rounded-xl bg-white shadow-2xl"
+            className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-xl bg-white shadow-2xl"
             id="consultation-modal"
           >
             {/* Top Border Indicator */}
@@ -89,35 +89,33 @@ export default function ConsultationModal({ isOpen, onClose, initialPracticeArea
                 </div>
               )}
 
-              <p className="text-sm text-slate leading-relaxed">
-                Reach Attorney Randy O. Smith directly. Email us the details of your matter or call our 24/7 line and we will respond promptly.
-              </p>
+              {/* Embedded LeadConnector form */}
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/mtFshENLcw5bWmsRU4LR"
+                style={{ width: '100%', height: '503px', border: 'none', borderRadius: '10px' }}
+                id="inline-mtFshENLcw5bWmsRU4LR"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Website Form (R.O. Smith Law Firm)"
+                data-height="503"
+                data-layout-iframe-id="inline-mtFshENLcw5bWmsRU4LR"
+                data-form-id="mtFshENLcw5bWmsRU4LR"
+                title="Website Form (R.O. Smith Law Firm)"
+              />
 
-              {/* Primary actions */}
-              <div className="mt-6 space-y-3">
-                <a
-                  href={mailtoHref}
-                  onClick={onClose}
-                  className="group flex w-full items-center justify-center gap-2 rounded-md bg-gold px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-navy shadow-md hover:bg-gold-bright active:scale-[0.98] transition-all"
-                  id="email-us-btn"
-                >
-                  <Mail size={17} />
-                  <span>Email Us</span>
-                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-                </a>
-
-                <a
-                  href="tel:9175472563"
-                  className="flex w-full items-center justify-center gap-2 rounded-md border-2 border-navy px-6 py-3 text-sm font-bold uppercase tracking-wide text-navy hover:bg-navy hover:text-white transition-colors"
-                  id="call-us-btn"
-                >
-                  <Phone size={16} />
-                  <span>Call (917) 547-2563</span>
-                </a>
-              </div>
-
-              {/* Contact details */}
-              <div className="mt-6 space-y-3 border-t border-neutral-200 pt-5 text-sm text-slate">
+              {/* Quick contact */}
+              <div className="mt-5 space-y-3 border-t border-neutral-200 pt-5 text-sm text-slate">
+                <div className="flex items-center gap-2.5">
+                  <Phone size={15} className="text-gold shrink-0" />
+                  <a href="tel:9175472563" className="font-semibold text-navy hover:text-gold transition-colors">
+                    Call (917) 547-2563 — Available 24/7
+                  </a>
+                </div>
                 <div className="flex items-center gap-2.5">
                   <Mail size={15} className="text-gold shrink-0" />
                   <a href={mailtoHref} onClick={onClose} className="font-semibold text-navy hover:text-gold transition-colors break-all">
@@ -127,10 +125,6 @@ export default function ConsultationModal({ isOpen, onClose, initialPracticeArea
                 <div className="flex items-start gap-2.5">
                   <MapPin size={15} className="text-gold shrink-0 mt-0.5" />
                   <span>11418 238th Street, Elmont, NY 11003</span>
-                </div>
-                <div className="flex items-center gap-2.5">
-                  <Clock size={15} className="text-gold shrink-0" />
-                  <span>Available 24/7/365 for emergencies</span>
                 </div>
               </div>
 
