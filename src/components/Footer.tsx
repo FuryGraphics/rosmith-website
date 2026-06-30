@@ -69,7 +69,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
                   R.O. Smith Law Firm
                 </span>
                 <span className="block text-[8px] uppercase tracking-[0.25em] text-gold font-bold mt-0.5">
-                  Attorney at Law • Elmont, NY
+                  Attorney at Law • Hicksville, NY
                 </span>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
             <div className="space-y-3.5 text-sm text-blue-100/70">
               <div className="flex gap-2.5 items-start">
                 <MapPin size={15} className="text-gold shrink-0 mt-0.5" />
-                <span>11418 238th Street, Elmont, NY 11003</span>
+                <span>100 Duffy Avenue, Hicksville, NY 11801</span>
               </div>
               <div className="flex gap-2.5 items-center">
                 <Phone size={15} className="text-gold shrink-0" />

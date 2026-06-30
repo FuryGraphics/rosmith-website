@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: 'Which areas of New York do you serve?',
-    a: 'We represent clients across all five NYC boroughs, Nassau County, Suffolk County, and Westchester County. Our primary office is conveniently located in Elmont, right on the border of Queens and Nassau.'
+    a: 'We represent clients across all five NYC boroughs, Nassau County, Suffolk County, and Westchester County. Our primary office is conveniently located in Hicksville, in the heart of Nassau County.'
   },
   {
     q: 'Will I work directly with Attorney Smith?',

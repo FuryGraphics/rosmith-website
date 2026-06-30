@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
 
             <div>
               <h2 className="font-display text-xl font-bold uppercase text-navy mb-3">1. Who We Are</h2>
-              <p>R.O. Smith Law Firm ("Firm," "we," "us," or "our") operates this website located at <strong>rosmithlawfirm.com</strong>. Our primary office is at 11418 238th Street, Elmont, NY 11003. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or submit an inquiry.</p>
+              <p>R.O. Smith Law Firm ("Firm," "we," "us," or "our") operates this website located at <strong>rosmithlawfirm.com</strong>. Our primary office is at 100 Duffy Avenue, Hicksville, NY 11801. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or submit an inquiry.</p>
             </div>
 
             <div>
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
               <p>If you have questions about this Privacy Policy, please contact us:</p>
               <div className="mt-3 space-y-1">
                 <p><strong>R.O. Smith Law Firm</strong></p>
-                <p>11418 238th Street, Elmont, NY 11003</p>
+                <p>100 Duffy Avenue, Hicksville, NY 11801</p>
                 <p>Phone: <a href="tel:9175472563" className="text-gold font-semibold hover:underline">(917) 547-2563</a></p>
                 <p>Email: <a href="mailto:rsmit042179@gmail.com" className="text-gold font-semibold hover:underline">rsmit042179@gmail.com</a></p>
               </div>

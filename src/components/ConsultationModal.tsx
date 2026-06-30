@@ -124,7 +124,7 @@ export default function ConsultationModal({ isOpen, onClose, initialPracticeArea
                 </div>
                 <div className="flex items-start gap-2.5">
                   <MapPin size={15} className="text-gold shrink-0 mt-0.5" />
-                  <span>11418 238th Street, Elmont, NY 11003</span>
+                  <span>100 Duffy Avenue, Hicksville, NY 11801</span>
                 </div>
               </div>
 

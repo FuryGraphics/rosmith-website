@@ -117,8 +117,8 @@ export const SERVICE_AREAS: ServiceArea[] = [
   {
     id: 'nassau',
     name: 'Nassau County',
-    coverage: 'Hempstead, Elmont (Office), Garden City, Mineola, Valley Stream',
-    details: 'Conveniently localized right on the border of NYC and Nassau County. We provide aggressive local defense and represent clients in real estate closings and accident claims across Long Island.'
+    coverage: 'Hicksville (Office), Hempstead, Garden City, Mineola, Levittown',
+    details: 'With our office centrally located in Hicksville, we provide aggressive local defense and represent clients in real estate closings and accident claims across Long Island.'
   },
   {
     id: 'suffolk',
@@ -136,7 +136,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
     id: 'queens',
     name: 'Queens',
     coverage: 'Jamaica, Flushing, Astoria, Long Island City, Forest Hills, Far Rockaway',
-    details: 'With our office located right on the Queens–Nassau border in Elmont, we provide rapid, around-the-clock representation throughout Queens. We appear regularly in Queens County Criminal and Supreme Courts and handle injury and real estate matters across the entire borough.'
+    details: 'With our office centrally located in Hicksville, we provide rapid, around-the-clock representation throughout Queens. We appear regularly in Queens County Criminal and Supreme Courts and handle injury and real estate matters across the entire borough.'
   },
   {
     id: 'brooklyn',

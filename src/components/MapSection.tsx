@@ -45,12 +45,12 @@ export default function MapSection() {
                 <div>
                   <span className="block text-[10px] text-slate uppercase tracking-widest font-bold">Primary Office</span>
                   <a
-                    href="https://maps.google.com/?q=11418+238th+Street,+Elmont,+NY+11003"
+                    href="https://maps.google.com/?q=100+Duffy+Avenue,+Hicksville,+NY+11801"
                     target="_blank"
                     rel="noreferrer"
                     className="text-sm font-bold text-navy hover:text-gold transition-colors"
                   >
-                    11418 238th Street, Elmont, NY 11003
+                    100 Duffy Avenue, Hicksville, NY 11801
                   </a>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function MapSection() {
             <div className="relative h-[320px] md:h-[380px] w-full rounded-md overflow-hidden border border-neutral-200 shadow-sm">
               <iframe
                 title="R.O. Smith Law Firm Location Map"
-                src="https://maps.google.com/maps?q=11418%20238th%20Street,%20Elmont,%20NY%2511003&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=100%20Duffy%20Avenue,%20Hicksville,%20NY%2011801&t=&z=12&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -85,9 +85,9 @@ export default function MapSection() {
 
             {/* Visual indication */}
             <div className="mt-4 flex items-center justify-between text-xs text-slate font-medium">
-              <span>GPS: 40.6974° N, 73.7144° W</span>
+              <span>GPS: 40.7684° N, 73.5251° W</span>
               <span className="text-navy font-bold flex items-center gap-1">
-                <Building2 size={12} className="text-gold" /> Border of Queens &amp; Nassau County
+                <Building2 size={12} className="text-gold" /> Central Nassau County
               </span>
             </div>
           </motion.div>

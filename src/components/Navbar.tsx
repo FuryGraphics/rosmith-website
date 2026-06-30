@@ -180,7 +180,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
               <span className="uppercase tracking-widest font-semibold">Available 24/7/365 • Free Confidential Consultations</span>
             </div>
             <div className="flex items-center gap-5">
-              <span className="text-white/70">Elmont, NY • Serving All NYC & Long Island</span>
+              <span className="text-white/70">Hicksville, NY • Serving All NYC & Long Island</span>
               <a href="tel:9175472563" className="flex items-center gap-1.5 font-bold text-gold hover:text-gold-bright transition-colors">
                 <Phone size={12} />
                 <span>(917) 547-2563</span>
